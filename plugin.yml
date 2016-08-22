@@ -1,0 +1,83 @@
+name: mcBans
+version: 1.0
+author: SubSide
+main: subside.plugins.mcbans.mcBans
+description: Replaces the bans and mute command.
+commands:
+  ban:
+    description: gives access to /ban
+    permission: mcbans.ban
+  unban:
+    description: gives access to /unban
+    permission: mcbans.unban
+  tempban:
+    description: gives access to /tempban
+    permission: mcbans.tempban
+  mute:
+    description: gives access to /mute
+    permission: mcbans.mute
+  tempmute:
+    description: gives access to /mute
+    permission: mcbans.mute
+  unmute:
+    description: gives access to /unmute
+    permission: mcbans.unmute
+  history:
+    description: gives access to /history
+    permission: mcbans.history
+  banip:
+    description: gives access to /banip
+    permission: mcbans.banip
+  ipban:
+    description: gives access to /ipban
+    permission: mcbans.banip
+  unbanip:
+    description: gives access to /unbanip
+    permission: mcbans.banip
+  ipunban:
+    description: gives access to /ipunban
+    permission: mcbans.banip
+  eventlog:
+    description: gives access to /eventlog
+    permission: mcbans.eventlog
+
+permissions:
+  mcbans.seebroadcastmessage:
+    description: Gives permission to see when somebody gets banned or muted
+    default: op
+  mcbans.banoffline:
+    description: gives permission to ban offline players
+    default: op
+  mcbans.excludedfromban:
+    description: cannot be banned
+    default: op
+  mcbans.muteoffline:
+    description: gives permission to mute offline players
+    default: op
+  mcbans.excludedfrommute:
+    description: cannot be muted
+    default: op
+  mcbans.ban:
+    description: gives permission for /ban
+    default: op
+  mcbans.unban:
+    description: gives permission for /unban
+    default: op
+  mcbans.tempban:
+    description: gives permission for /tempban
+    default: op
+  mcbans.mute:
+    description: gives permission for /mute
+    default: op
+  mcbans.unmute:
+    description: gives permission for /unmute
+    default: op
+  mcbans.history:
+    description: gives permission for /history
+    default: op
+  mcbans.eventlog:
+    description: gives permission for /eventlog
+    default: op
+  mcbans.banip:
+    description: gives permission for the IP commands
+    default: op

@@ -1,0 +1,42 @@
+# Database settings
+
+hostname: "localhost"
+port: 3306
+database: "mcBans"
+username: "root"
+password: ""
+
+
+# Server settings
+# These are the only settings you should have to change per server
+
+# The name of the server (for example: "Factions");
+server: "Factions"
+
+# Prefix
+prefix: "&3[mcBans] &7"
+
+
+# Variables:
+# %handler% - Banner/muter.
+# %from% - From which date.
+# %till% - Till which date.
+# %reason% - The reason of the event
+
+ban:
+  default-reason: "You have been banned by an administrator!"
+  default-unban-reason: "Unbanned by an administrator!"
+  message:
+    - "&4You have been banned from this server!"
+    - "&fBy: &c%handler% &fDate: &c%from%"
+    - "&fExpires at: &c%till%"
+    - "&fReason: &c%reason%"
+  use-newlines: true
+  
+mute:
+  default-reason: "You have been banned by an administrator!"
+  default-unmute-reason: "Unmuted by an administrator!"
+  message:
+    - "&7You have been muted by: &3%handler%"
+    - "&7Expires in: &6%till%"
+    - "&7Reason: &f%reason%"
